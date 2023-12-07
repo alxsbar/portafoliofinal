@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body { margin: 0; padding: 0;}
+header a.logo { display: block; position: absolute;
+background-position: 0px 0px;
+background-repeat: no-repeat;
+}
+header { height: 275px; background: url(../img/banner_large.jpg) no-repeat right 0px; }
+    header a.logo {
+    width: 150px; height: 85px; top:28px;right:
+    30px;
+    background-image: url(../img/logo_large.png;)
+    }
+    
+    article { padding: 60px 20px 10px 20px; }
+    .promo_container nav { top:275px; }
+nav a { margin: 12px 0px 10px 20px;  
+padding: 0px 0px 15px 20px;}
+        .promo_container .promo {
+            width: 33%;
+            float: left;
+            background-position: 0px 3px;
+            }
+            nav {
+                width:100%;
+                display:block;
+                position: absolute;
+                background-color: #a6430a;
+                }
+                nav { top:275px; }
+nav a { margin: 12px 0px 10px 20px; }

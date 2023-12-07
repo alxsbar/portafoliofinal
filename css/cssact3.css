@@ -1,0 +1,68 @@
+/* resetear nevegación */
+* {
+    margin: 0px;
+    padding: 0px;
+
+     }
+/* centrar caja principal */
+.wrap {
+    width: 980px;
+    margin: 15px auto;
+    border: 3px solid color black;
+    padding-left: 10px;
+}
+/* estilo a la cabecera principal */
+h1 {
+    color: white;
+}
+#cabecera {
+    background: #28ad56;
+    text-align: center;
+}
+/* barra de navegación */
+#menu {
+    background: #18529d;
+    padding: 5px 15px;
+}
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana sans-serif;
+}
+/* acomodar caja principal y secundaria */
+#principal {
+    #float: left;
+    width: 660px;
+    margin: 20px;
+    border-right: 1px solid black;
+}
+#secundaria {
+    width: 245px;
+    float: left;
+}
+/* estilos para el pie de página */
+#pie {
+    clear: both;
+    border-top: 2px solid black;
+    text-align: center;
+}
+/* cambiar color barra de menus */
+#menu {
+    background-color: black;
+    color: blue;
+}
+/* cambiar color de links */
+a:link {
+    color: red;
+}
+a:hover {
+    background-color: lightgreen;
+  }
+/* color de links visitados */
+a:link {
+    color: greenyellow;
+}
+a:hover {
+    background-color: lightgreen;
+  }

@@ -1,0 +1,138 @@
+html, body, main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* Estilo para todo el cuerpo de la página */
+body {
+    background-color: black; /* Fondo de color negro para toda la página */
+    color: white; /* Color de texto general será blanco para contraste con el fondo negro */
+    font-family: Arial, sans-serif; /* Fuente general */
+}
+
+/* Estilo para el recuadro de portada en la parte superior */
+#portada {
+    background-image: url('../img/portadahome.png'); /* Añade la ruta a tu imagen de fondo */
+    background-size: cover; /* La imagen de fondo cubrirá todo el espacio disponible */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen en el div */
+    height: 50px; /* Altura del recuadro */
+    display: flex; 
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    font-size: 24px; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espaciado inferior para separar del contenido siguiente */
+}
+
+/* Estilo para el recuadro en la parte inferior */
+#footer {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente negro */
+    padding: 10px 0; /* Espaciado interno en la parte superior e inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 16px; /* Tamaño del texto */
+    position: absolute; /* Posiciona el footer en el fondo */
+    bottom: 0; /* En la parte inferior de la página */
+    width: 100%; /* Abarca toda la anchura */
+}
+
+#carousel {
+    position: relative;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#carousel a {
+    text-decoration: none;  /* Elimina el subrayado de los enlaces */
+    display: block;  /* Asegura que el enlace cubra toda el área de la imagen */
+    color: inherit;  /* Hereda el color del texto del elemento padre */
+}
+
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 200px;
+}
+
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 200px;
+}
+
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+    width: 400px;
+}
+
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 400px;
+}
+
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+
+.buttons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
